@@ -1,0 +1,19 @@
+<idea-plugin>
+	<id>org.hoshino9.intellijplugin</id>
+	<name>HoshinoPlugin</name>
+	<vendor email="limbolrain@gmail.com" url="http://blog.hoshino9.org">HoshinoPlugin</vendor>
+
+	<extensions defaultExtensionNs="com.intellij">
+	</extensions>
+
+	<actions>
+		<action
+				class="org.hoshino9.intellijplugin.actions.HelloAction"
+				id="Hoshino.HelloAction"
+				text="Say Hello"
+				description="Print Hello world!">
+			<add-to-group group-id="EditorPopupMenu1" anchor="first"/>
+			<keyboard-shortcut first-keystroke="ctrl h" keymap="$default"/>
+		</action>
+	</actions>
+</idea-plugin>
