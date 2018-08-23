@@ -2,7 +2,7 @@ package org.hoshino9.intellijplugin.module;
 
 import com.intellij.openapi.module.ModuleType;
 import com.intellij.openapi.module.ModuleTypeManager;
-import org.hoshino9.intellijplugin.HoshinoIcon;
+import org.hoshino9.intellijplugin.HoshinoIcons;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
@@ -35,6 +35,6 @@ public class HoshinoModuleType extends ModuleType<HoshinoModuleBuilder> {
 
 	@Override
 	public Icon getNodeIcon(boolean isOpened) {
-		return HoshinoIcon.hoshino;
+		return HoshinoIcons.hoshino;
 	}
 }

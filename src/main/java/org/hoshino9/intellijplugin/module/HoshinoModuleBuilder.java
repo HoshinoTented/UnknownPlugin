@@ -8,9 +8,8 @@ import com.intellij.openapi.roots.ModifiableRootModel;
 public class HoshinoModuleBuilder extends ModuleBuilder {
 	@Override
 	public void setupRootModel(ModifiableRootModel modifiableRootModel) throws ConfigurationException {
-		modifiableRootModel.inheritSdk();
+//		modifiableRootModel.inheritSdk();
 		doAddContentEntry(modifiableRootModel);
-		System.out.println("setupRootModel");
 	}
 
 	@Override
