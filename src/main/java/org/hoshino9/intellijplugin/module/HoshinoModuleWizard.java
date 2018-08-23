@@ -1,10 +1,17 @@
 package org.hoshino9.intellijplugin.module;
 
+import org.hoshino9.intellijplugin.HoshinoSetting;
 import org.hoshino9.intellijplugin.module.ui.HoshinoModuleWizardUI;
 
 import javax.swing.*;
 
 public class HoshinoModuleWizard extends HoshinoModuleWizardUI {
+	private HoshinoModuleBuilder builder;
+
+	public HoshinoModuleWizard(HoshinoModuleBuilder builder) {
+		this.builder = builder;
+	}
+
 	@Override
 	public JComponent getComponent() {
 		return this.mainPanel;
@@ -12,6 +19,6 @@ public class HoshinoModuleWizard extends HoshinoModuleWizardUI {
 
 	@Override
 	public void updateDataModel() {
-		System.out.println("Hello world!");
+		builder.setting.name = this.name.getText();
 	}
 }
