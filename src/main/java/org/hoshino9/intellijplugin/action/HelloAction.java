@@ -1,4 +1,4 @@
-package org.hoshino9.intellijplugin.actions;
+package org.hoshino9.intellijplugin.action;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;

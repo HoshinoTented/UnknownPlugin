@@ -1,6 +1,5 @@
-package org.hoshino9.intellijplugin.projects;
+package org.hoshino9.intellijplugin.module;
 
-import com.intellij.ide.util.projectWizard.ModuleBuilder;
 import com.intellij.openapi.module.ModuleType;
 import com.intellij.openapi.module.ModuleTypeManager;
 import org.hoshino9.intellijplugin.HoshinoIcon;
