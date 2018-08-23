@@ -1,10 +1,10 @@
 package org.hoshino9.intellijplugin.module;
 
-import org.hoshino9.intellijplugin.module.ui.ModuleWizardUI;
+import org.hoshino9.intellijplugin.module.ui.HoshinoModuleWizardUI;
 
 import javax.swing.*;
 
-public class HoshinoModuleWizard extends ModuleWizardUI {
+public class HoshinoModuleWizard extends HoshinoModuleWizardUI {
 	public HoshinoModuleWizard() {
 
 	}
