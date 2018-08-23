@@ -4,6 +4,7 @@
 	<vendor email="limbolrain@gmail.com" url="http://blog.hoshino9.org">HoshinoPlugin</vendor>
 
 	<extensions defaultExtensionNs="com.intellij">
+		<moduleType id="HOSHINO_MODULE_TYPE" implementationClass="org.hoshino9.intellijplugin.projects.HoshinoModuleType"/>
 	</extensions>
 
 	<actions>
