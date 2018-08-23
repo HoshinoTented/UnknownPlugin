@@ -4,7 +4,8 @@
 	<vendor email="limbolrain@gmail.com" url="http://blog.hoshino9.org">HoshinoPlugin</vendor>
 
 	<extensions defaultExtensionNs="com.intellij">
-		<moduleType id="HOSHINO_MODULE_TYPE" implementationClass="org.hoshino9.intellijplugin.module.HoshinoModuleType"/>
+		<moduleType id="HOSHINO_MODULE_TYPE"
+					implementationClass="org.hoshino9.intellijplugin.module.HoshinoModuleType"/>
 	</extensions>
 
 	<actions>
@@ -15,6 +16,10 @@
 				description="Print Hello world!">
 			<add-to-group group-id="EditorPopupMenu1" anchor="first"/>
 			<keyboard-shortcut first-keystroke="ctrl h" keymap="$default"/>
+		</action>
+		<action id="org.hoshino9.intellijplugin.action.CreateHoshinoFileAction"
+				class="org.hoshino9.intellijplugin.action.CreateHoshinoFileAction">
+			<add-to-group group-id="NewGroup1"/>
 		</action>
 	</actions>
 </idea-plugin>
