@@ -11,6 +11,7 @@ import com.intellij.openapi.roots.ContentEntry;
 import com.intellij.openapi.roots.ModifiableRootModel;
 import com.intellij.openapi.vfs.VirtualFile;
 import org.hoshino9.intellijplugin.HoshinoSetting;
+import org.hoshino9.intellijplugin.language.HoshinoLanguage;
 import org.jetbrains.annotations.Nullable;
 
 import java.io.IOException;
@@ -24,7 +25,7 @@ public class HoshinoModuleBuilder extends ModuleBuilder {
 		ContentEntry entry = modifiableRootModel.getContentEntries()[0];
 		try {
 			VirtualFile moduleRoot = entry.getFile();
-			if (moduleRoot != null) moduleRoot.findOrCreateChildData(modifiableRootModel.getModule(), setting.name);
+			if (moduleRoot != null) moduleRoot.findOrCreateChildData(modifiableRootModel.getModule(), setting.name + "." + HoshinoLanguage.EXTENSTION);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

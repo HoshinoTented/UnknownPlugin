@@ -6,6 +6,7 @@
 	<extensions defaultExtensionNs="com.intellij">
 		<moduleType id="HOSHINO_MODULE_TYPE"
 					implementationClass="org.hoshino9.intellijplugin.module.HoshinoModuleType"/>
+		<fileTypeFactory implementation="org.hoshino9.intellijplugin.language.HoshinoFileTypeFactory"/>
 	</extensions>
 
 	<actions>
