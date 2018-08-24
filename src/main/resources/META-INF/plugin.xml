@@ -18,8 +18,14 @@
 			<add-to-group group-id="EditorPopupMenu1" anchor="first"/>
 			<keyboard-shortcut first-keystroke="ctrl h" keymap="$default"/>
 		</action>
+
 		<action id="Hoshino.CreateHoshinoFile"
 				class="org.hoshino9.intellijplugin.action.CreateHoshinoFileAction">
+			<add-to-group group-id="NewGroup1"/>
+		</action>
+
+		<action class="org.hoshino9.intellijplugin.action.CreateHoshinoFileFromTemplate"
+				id="Hoshino.CreateHoshinoFileFromTemplate">
 			<add-to-group group-id="NewGroup1"/>
 		</action>
 	</actions>
